@@ -1,0 +1,19 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage{tkz-euclide} % for marking angles, etc.
+\usepackage{amsmath}     % for mathematical symbols
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5]
+  %\draw[thin,gray!40] (-1,-1) grid (6,4);
+  \draw[->] (0,0)--(6,4) node[anchor=south west]{$r-as$};
+  \draw[line width=2pt,green,-stealth](0,0)--(0.83205,0.5547) node[above]{$\Vec{e_r}$};
+  \fill (0,0) circle[radius=2pt];
+  \draw[] (0,0) node[anchor=north east]{\textbf{Q}};
+  \fill (3,2) circle[radius=2pt];
+  \draw[] (3,2) node[anchor=south east]{\textbf{P}};
+  \draw[] (1.5,1) node[anchor=south east]{$r$};
+  \draw[line width=2pt,blue,-stealth](3,2)--(4.5,3) node[above]{$\Vec{E}$};
+\end{tikzpicture}
+
+\end{document}
